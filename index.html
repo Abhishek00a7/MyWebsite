@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main w-full font-[helvetica_now_display]">
+    <nav class="w-full h-[13vh] fixed top-0 left-0 px-4 md:px-10 py-3 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 bg-black z-50">
+      <img class="w-[120px] md:w-[160px] mix-blend-screen filter contrast-150 saturate-150" src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3" alt="">
+      <div class="flex flex-wrap justify-center md:flex-nowrap gap-4 items-center">
+        <a href="#games" class="tracking-light text-sm md:text-base text-white hover:text-yellow-400 hover:[text-shadow:0_0_10px_#FAF060] transition-all">Games</a>
+        <a href="#store" class="tracking-light text-sm md:text-base text-white hover:text-yellow-400 hover:[text-shadow:0_0_10px_#FAF060] transition-all">Store</a>
+        <a href="#community" class="tracking-light text-sm md:text-base text-white hover:text-yellow-400 hover:[text-shadow:0_0_10px_#FAF060] transition-all">Community</a>
+        <a href="#support" class="tracking-light text-sm md:text-base text-white hover:text-yellow-400 hover:[text-shadow:0_0_10px_#FAF060] transition-all">Support</a>
+        <a href="#news" class="tracking-light text-sm md:text-base text-white hover:text-yellow-400 hover:[text-shadow:0_0_10px_#FAF060] transition-all">News</a>
+      </div>
+    </nav>
+    <div class="w-full h-[120vh] overflow-hidden">
+      <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-3/4 mix-blend-lighten contrast-150 saturate-150" src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3" alt="">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[18rem] h-[18rem] md:w-[26rem] md:h-[26rem] rounded-full bg-blue-900/50 blur-[90px] mix-blend-screen"></div>
+      <canvas></canvas>
+    </div>
+    <section id="back" class="w-full">
+      <div class="w-full h-[115vh] bg-black/80 flex flex-col relative">
+        <div class="flex">
+          <div class="w-1/2 h-full pt-[1rem]">
+            <h1 class="text-[#00f0ff] text-1xl pl-[3.5rem]">/// .News.Module_Highlight</h1>
+            <img src="https://cdn-l.cdprojektred.com/news/2f599625808918084d792f96786386e04e2da7a8_q90_1280x720.png" alt="" class="w-[650px] h-[400px] mx-auto border-[5px] border-[#00f0ff]">
+            <h3 class="text-white pt-[1.5rem] pl-[3.5rem] text-[20px]">Available early on next year with Apple silicon, the Ultimate Edition <br> will launch on the Mac App Store and Steam</h3>
+          </div>
+          <div class="w-1/2 h-full flex flex-wrap">
+            <div class="flex flex-wrap flex-col gap-4 p-8">
+              <div class="flex gap-[85px] pl-[3rem] pb-[2rem] pr-[4.5rem]">
+                <div class="mb-6">
+                  <h3 class="text-white text-[16px] mb-2">Cyberpunk 2077</h3>
+                  <img src="https://cdn-s.cdprojektred.com/news/ffd02ee1205654cc3a257b0471fae0e01fd6899b_q90_592x334.png" alt="Cyberpunk Mac" class="w-[400px] h-[159px] mb-2">
+                  <h4 class="text-white text-[14px]">December 14, 2023</h4>
+                </div>
+
+                <div class="mb-6">
+                  <h3 class="text-white text-[16px] mb-2">Cyberpunk 2077</h3>
+                  <img src="https://cdn-s.cdprojektred.com/news/2a46a7b1995de881d536a8cc0d98f475db0d6153_q90_592x334.png" alt="Update 2.1" class="w-[400px] h-[159px] mb-2">
+                  <h4 class="text-white text-[14px]">December 5, 2023</h4>
+                </div>
+              </div>
+
+              <div class="flex gap-[85px] pl-[3rem] pb-[2rem] pr-[4.5rem]">
+                <div class="mb-6">
+                  <h3 class="text-white text-[16px] mb-2">REDstreams: Update 2.1</h3>
+                  <img src="https://cdn-s.cdprojektred.com/news/191d8c639f2b1ce9e7bed868599fe9cdb025613b_q90_592x334.png" alt="REDstreams" class="w-[400px] h-[159px] mb-2">
+                  <h4 class="text-white text-[14px]">December 1, 2023</h4>
+                </div>
+
+                <div class="mb-6">
+                  <h3 class="text-white text-[16px] mb-2">Black Friday deals</h3>
+                  <img src="https://cdn-s.cdprojektred.com/news/c79c5de2a32116ccb8970a60b59fdbb9f368be69_q90_592x334.png" alt="Black Friday" class="w-[400px] h-[159px] mb-2">
+                  <h4 class="text-white text-[14px]">November 24, 2023</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-auto mb-8">
+          <button class="px-8 py-3 bg-black text-[#00f0ff] font-semibold rounded hover:bg-gray-900 transition-colors text-lg border-2 border-[#00f0ff]">View All News</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-full h-[200vh] bg-[#fcee0a]">
+        <h1 id="welcome" class="text-black text-center text-4xl md:text-[35px] font-bold">WELCOME TO THE DARK FUTURE</h1>
+        <p class="text-black text-center text-sm md:text-base w-[830px] mx-auto pt-[2rem]" id="para">Immerse yourself in the Cyberpunk universe, from the original storyline of Cyberpunk <br> 2077 and its gripping spy-thriller expansion Phantom Liberty to the award-winning <br> anime series Cyberpunk: Edgerunners — there are countless stories to discover in <br> the deadly megalopolis of Night City.</p>
+        <div class="flex flex-col w-full">
+          <div class="h-[1.5px] bg-gray-500 mx-[3rem] my-[3rem]"></div>
+          <div class="flex flex-row w-full px-[2.5rem] py-[1rem]">
+            <figure class="w-1/4 border-[5px] border-black">
+              <img src="https://www.cyberpunk.net/build/images/home8/product-cp77@1x-5cf31fe8.jpg" alt="" class="w-full h-full object-cover">
+            </figure>
+            <figure class="w-1/4 border-[5px] border-black">
+              <img src="https://www.cyberpunk.net/build/images/home8/product-phantomliberty-final@1x-1080ee25.jpg" alt="" class="w-full h-full object-cover">
+            </figure>
+            <figure class="w-1/4 border-[5px] border-black">
+              <img src="https://www.cyberpunk.net/build/images/home8/product-edgerunners@1x-6f888a59.jpg" alt="" class="w-full h-full object-cover">
+            </figure>
+            <figure class="w-1/4 border-[5px] border-black">
+              <img src="https://www.cyberpunk.net/build/images/home8/product-gear@1x-ec02a9d0.jpg" alt="" class="w-full h-full object-cover">
+            </figure>
+          </div>
+          <div class="h-[1px] bg-gray-500 mx-[2.5rem] my-[3rem]"></div>
+
+          <h1 class="text-black text-center text-4xl md:text-[35px] font-bold">Sign up for the official Cyberpunk 2077 newsletter!</h1>
+          <p  id="para2" class="text-black text-center text-sm md:text-base w-[830px] mx-auto pt-[2rem]">From games to beyond, keep your feed up to date with the latest news and announcements on all things Cyberpunk 2077!</p>
+           <div>
+           <div class="flex justify-center items-center gap-4 mt-8">
+             <div class="col-span-8">
+               <input type="email" placeholder="Enter your email address" class="px-4 py-2 w-full border-b-[3px] border-b-black rounded focus:outline-none focus:ring-[#fcee0a] focus:ring-[#fcee0a] placeholder-black">
+               <p>
+                CD PROJEKT will be responsible for your personal data. For more information please check our CD PROJEKT Privacy Policy
+               </p>
+             </div>
+             <div class="col-span-4">
+               <button class="px-8 py-3 bg-[#fcee0a] text-black font-semibold rounded hover:bg-yellow-500 w-full text-[1.8rem]">Submit</button>
+             </div>
+           </div>
+           </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <div class="w-full h-[50vh] bg-black text-white">
+      <div class="mx-auto w-[1300px] flex flex-row border-b-[0.4px] border-b-white h-[20vh]">
+        <div class="w-1/2">
+          <div class="flex flex-row h-full w-full">
+            <div class="pt-[4rem] pl-[5rem]">
+              <h1 class="text-[#00f0ff]">FIND ON US</h1>
+            </div>
+            <div class="pt-[1.6rem] pl-[1rem]">
+              <img src="https://rukminim2.flixcart.com/image/850/1000/l0tweq80/poster/g/2/q/small-youtube-logo-multicolour-photo-paper-print-poster-original-imagcj8hjtuzh3pm.jpeg?q=90&crop=false" alt="" class="w-[100px] h-[100px]">
+            </div>
+            <div class="pt-[3rem] pl-[0.7rem]">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/800px-Facebook_logo_%28square%29.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="pt-[3.3rem] pl-[2rem]">
+              <img src="https://img.icons8.com/m_rounded/512/FFFFFF/discord-logo.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <div class="flex flex-row h-full w-full">
+            <div class="pt-[2.3rem] pl-[12rem]">
+              <img src="https://www.cyberpunk.net/build/images/footer/partners/nvidia-5a0ab065.svg" alt="" class="w-[100px] h-[100px]">
+
+            </div>
+            <div class="pt-[2.3rem] pl-[5rem]">
+              <img src="https://www.cyberpunk.net/build/images/footer/partners/alienware-3d98dd93.svg" alt="" class="w-[100px] h-[100px]">
+            </div>
+            <div class="pt-[2.3rem] pl-[5rem] pr-[4.6rem]">
+              <img src="https://www.cyberpunk.net/build/images/footer/partners/amd-a823d277.svg" alt="" class="w-[100px] h-[100px]">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[1300px] h-[10vh] mx-auto flex flex-row  border-b-[0.4px] border-b-white items-center justify-between pt-[2rem] pb-[2rem] px-4">
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          Terms of Use & Privacy Policy
+        </div>
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          Careers
+        </div>
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          User agreement
+        </div>
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          FanContentGuidelines
+        </div>
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          Cookie Declaration
+        </div>
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          REDmod
+        </div>
+        <div class="w-fit h-fit text-[#00f0ff] hover:text-white cursor-pointer transition-colors">
+          English
+        </div>
+      </div>
+
+      <div class="w-[1300px] h-[10vh] mx-auto bg-black text-white flex justify-center items-center pt-[4rem]">
+        <div class="w-fit h-fit text-white mx-4">
+          <img src="https://www.cyberpunk.net/build/images/CDProjektRed-White-e4ac7847.svg" alt="" class="w-[100px] h-[100px]">
+        </div>
+        <div class="w-[500px] h-fit text-white mx-4">
+          <p class="text-sm text-white">© 2024 CD PROJEKT S.A. All rights reserved. CD PROJEKT, the CD PROJEKT logo, Cyberpunk, Cyberpunk 2077 and the Cyberpunk 2077 logo are trademarks and/or registered trademarks of CD PROJEKT S.A. in the US and/or other countries.</p>
+        </div>
+        <div class="w-fit h-fit text-white mx-4">
+         <img src="https://www.cyberpunk.net/build/images/witcher-dbdb7666.png" alt="" class="w-[100px] h-[100px]">
+        </div>
+        <div class="w-fit h-fit text-white mx-4">
+         <img src="https://www.cyberpunk.net/build/images/gwent-f7fcd4e6.png" alt="" class="w-[100px] h-[100px]">
+        </div>
+      </div>
+      </div>
+    </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

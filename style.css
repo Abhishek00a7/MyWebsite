@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  color: black;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: black;
+}
+
+#welcome{
+  padding-top: 20vh; 
+}
+
+#para{
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+#para2{
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+#back{
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/625/454/large/white-and-blue-dots-moving-in-a-black-background-free-video.jpg); 
+  background-size: cover;
+  background-position: center;
+}
