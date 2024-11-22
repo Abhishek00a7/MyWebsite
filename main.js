@@ -58,7 +58,7 @@ new RGBELoader()
 // Load 3D Model
 const loader = new GLTFLoader()
 loader.load(
-  '/DamagedHelmet.gltf',
+  '.public/DamagedHelmet.gltf',
   function (gltf) {
     model = gltf.scene
     if (isMobile()) {
